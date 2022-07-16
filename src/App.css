@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  background: hsl(210, 29%, 25%);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1400px;
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.form{
+  margin: 30px 30px auto;
+  width: 300px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1); 
 }
+.form h1{
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-container{
+  width: 100%;
+  margin: 5px 20px 10px 20px;
+  overflow: hidden;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.form-container label{
+  line-height: 2em;
+  margin: 0 5px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-container input{
+  width: 100%;
+  padding: 5px;
+}
+.btn-submit{
+  margin: 5px;
+  line-height: 2;
+  width: 100%;
+  padding: 5px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin: 40px 20px 10px 20px;
+  cursor: pointer;
+  background: hsl(168, 76%, 42%);
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-weight: 700;
+}
+.btn-clear{
+  margin: 5px;
+  line-height: 2;
+  width: 100%;
+  padding: 5px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin: 10px 20px 10px 20px;
+  cursor: pointer;
+  background: hsl(204, 8%, 76%);
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-weight: 700;
+
+}
+/* Styles movies list */
+.container-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 1;
+  width: 800px;
+  position: relative;
+  margin: 10px;
+  
+}
+.container-list h1{
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+  
+}
+.container-list li{
+  list-style: none;
+  margin: 5px;
+  background: hsl(204, 8%, 98%);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+li h2{
+
+  color: hsl(192, 2%, 60%);
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 2.5;
+  width: auto;
+  margin: 5px auto;
+  text-transform: uppercase;
+
+}
+li p{
+  margin: 5px 15px 0px 15px;
+}
+li button {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  line-height: 2em;
+  margin: 10px;
+  background: hsl(204, 70%, 53%);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+li .btn-delete{
+  background: hsl(6, 63%, 46%);
 }
